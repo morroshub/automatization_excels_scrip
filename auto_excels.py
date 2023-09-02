@@ -4,6 +4,16 @@ from openpyxl import load_workbook
 from openpyxl.styles import Font
 from openpyxl.chart import BarChart, Reference
 import string
+import sys, os 
+
+# Detectar ruta donde esta el ejecutable. 
+
+application_path = os.path.dirname*(sys.executable)
+
+
+# # Remplazar ruta en el caso de ser necesario.
+# (f'{application_path}/{nombre_archivo}')
+
 
 def automate_excel(file_name):
     """The file name should have the following structure: sales_month.xlsx"""
